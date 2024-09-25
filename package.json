@@ -1,0 +1,15 @@
+{
+    "name": "flowers",
+    "version": "0.0.0",
+    "description": "flowers blog",
+    "main": "index.js",
+    "scripts": {
+        "build-prod": "env NODE_ENV=production npx @11ty/eleventy --pathprefix 'flowers'",
+        "serve": "npx @11ty/eleventy --serve"
+    },
+    "author": "João Silva (joaorfcsilva@gmail.com)",
+    "license": "MIT",
+    "dependencies": {
+    "@11ty/eleventy": "^2.0.1"
+    }
+}

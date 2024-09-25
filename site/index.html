@@ -1,0 +1,30 @@
+---
+layout: main.html
+---
+
+<h1>flowers flowers flowers</h1>
+
+<ul class="post-list">
+    {% assign posts = collections.posts | where: "data.publish", true | sort: "data.date" | reverse %}
+    {% for post in posts %}
+        <li class="post-list-item">
+            <a href="{{ post.url }}">
+                <div class="post-list-item_title">
+                    <h2>{{ post.data.title }}</h2>
+                    {% if post.data.date | isRecentPost %}
+                        <span class="post-list-item_new">
+                            new!
+                            <div class="post-list-item_new_explainer">
+                                <p>This post was published in the last 7 days! </p>
+                            </div>
+                        </span>
+                    {% endif %}
+                </div>
+                <img width="250" src="/images/{{ post.data.image-src }}" alt="Picture of a {{ post.data.title }}" />
+            </a>
+        </li>
+    {% endfor %}
+</ul>
+
+<a href="/about">about this blog</a>
+

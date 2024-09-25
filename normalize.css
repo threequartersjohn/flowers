@@ -1,0 +1,125 @@
+/* normalize line height and webkit orientation changes in line height */
+html {
+    line-height: 1.15;
+    -webkit-text-size-adjust: 100%;
+}
+
+/* remove body margin */
+body {
+    margin: 0;
+}
+
+/* fix h1, h2 font size properties removing irregular changes in section/article parents */
+h1 {
+    font-size: 2rem;
+}
+h2 {
+    font-size: 1.5rem;
+}
+
+/* TEXT WRAP */
+/* Headings */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+li,
+figcaption {
+    text-wrap: balance;
+}
+
+/* as of 09/24 this only works on chrome, but it a nice improvement */
+/* https://caniuse.com/mdn-css_properties_text-wrap_pretty */
+/* p,
+li,
+figcaption {
+    text-wrap: pretty;
+} */
+
+/* adds default containers to most common block containers */
+header,
+footer,
+main,
+section,
+article {
+    container-type: inline-size;
+}
+
+/* remove unwanted padding and margins */
+div,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    padding: 0;
+    margin: 0;
+}
+
+/* make all images blocks */
+img {
+    display: block;
+}
+
+/* regularize font and remove margins */
+button,
+input,
+optgroup,
+select,
+textarea {
+    font-family: inherit;
+    font-size: 100%;
+    line-height: 1.15;
+    margin: 0;
+}
+
+
+/* BUTTONS */
+/* normalize styles of clickables in safari */
+button,
+[type='button'],
+[type='reset'],
+[type='submit'] {
+    -webkit-appearance: button;
+}
+
+/* remove paddings and border in firefox */
+button::-moz-focus-inner,
+[type='button']::-moz-focus-inner,
+[type='reset']::-moz-focus-inner,
+[type='submit']::-moz-focus-inner {
+    border-style: none;
+    padding: 0;
+}
+
+button:-moz-focusring,
+[type='button']:-moz-focusring,
+[type='reset']:-moz-focusring,
+[type='submit']:-moz-focusring {
+    outline: 1px dotted ButtonText;
+}
+
+/* all anchors have inherited color and no decoration */
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+/* preseve breaks in paragraphs, useful for inlining text with linebreaks from a template source */
+p {
+    white-space: preserve-breaks;
+}
+
+
+/* optional */
+/* max width for text elements, this is good for websites with long text, this avoids long running text that takes too much effort to travel */
+p,
+li,
+figcaption {
+    max-width: 65ch;
+}
