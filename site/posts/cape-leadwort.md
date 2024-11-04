@@ -2,6 +2,7 @@
 publish: true
 date: 2024-11-03
 title: cape leadwort
+wikipedia-page-id: 12437895
 name: Plumbago auriculata
 image-src: "cape-leadwort.jpeg"
 description: |

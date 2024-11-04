@@ -5,13 +5,18 @@ layout: main.html
 <h1>{{ title }}</h1>
 
 <div class="post">
-    <img src="/images/{{ image-src }}" alt="Picture of a {{ title }}" />
+  <a href="#content" class="skip">Skip to text...</a>
+  <img src="/images/{{ image-src }}" alt="Picture of a {{ title }}" />
+  <div id="content">
     <div>
-        <div>
-            <em><h3>{{ name }}</h3></em>
-            <p>{{ description }}</p>
-        </div>
-
-        <a href="/">Back to Home</a>
+      <em><h3>{{ name }}</h3></em>
+      <p>{{ description }}</p>
     </div>
+
+    <a href="/">Back to Home</a>
+  </div>
+  <details>
+    <summary>What Wikipedia says...</summary>
+    <div>{{ wikipedia-page-id | getWikiData }}</div>
+  </details>
 </div>

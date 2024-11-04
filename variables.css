@@ -1,22 +1,22 @@
 :root {
-    /* Themes: */
-    /* --dark: dark theme */
+  /* Themes: */
+  /* --dark: dark theme */
 
-    /* Colors */
-    --dark-bg-color: #272838;
-    --dark-text-color-bright: #F9C784;
-    --dark-text-color-dark: #80B192;
-    --dark-accent-color:  #F9C784;
+  /* Colors */
+  --dark-bg-color: #272838;
+  --dark-text-color-bright: #F9C784;
+  --dark-text-color-dark: #80B192;
+  --dark-accent-color:  #F9C784;
 
-    /* Font sizes */
-    --small-font-size: 0.875rem;
-    --medium-font-size: 0.9375rem;
-    --large-font-size: 1rem;
+  /* Font sizes */
+  --small-font-size: 0.875rem;
+  --medium-font-size: 0.9375rem;
+  --large-font-size: 1rem;
 
-    /* Initial color values */
-    --bg-color: var(--dark-bg-color);
-    --text-color-bright: var(--dark-text-color-bright);
-    --text-color-dark: var(--dark-text-color-dark);
-    --accent-color: var(--dark-accent-color);
+  /* Initial color values */
+  --bg-color: var(--dark-bg-color);
+  --text-color-bright: var(--dark-text-color-bright);
+  --text-color-dark: var(--dark-text-color-dark);
+  --accent-color: var(--dark-accent-color);
 }
 

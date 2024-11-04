@@ -1,0 +1,8 @@
+root = true
+
+# end new line
+insert_final_newline = true
+
+# indentation
+indent_style = space
+indent_size = 2
