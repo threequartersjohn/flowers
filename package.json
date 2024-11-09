@@ -4,7 +4,8 @@
   "description": "flowers blog",
   "main": "index.js",
   "scripts": {
-    "build-prod": "env NODE_ENV=production npx @11ty/eleventy --pathprefix 'flowers'",
+    "build": "env NODE_ENV=production npx @11ty/eleventy",
+    "build-with-prefix": "env NODE_ENV=production npx @11ty/eleventy --pathprefix 'flowers'",
     "dev": "npx @11ty/eleventy --serve"
   },
   "author": "João Silva (joaorfcsilva@gmail.com)",

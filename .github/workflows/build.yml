@@ -19,7 +19,7 @@ jobs:
      - name: Installing packages...
        run: npm ci
      - name: Building prod 🛠️
-       run: npm run build-prod
+       run: npm run build-with-prefix
      - name: Deploying to gh-pages 🚀
        uses: peaceiris/actions-gh-pages@v4
        with:
