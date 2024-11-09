@@ -18,5 +18,9 @@
   --text-color-bright: var(--dark-text-color-bright);
   --text-color-dark: var(--dark-text-color-dark);
   --accent-color: var(--dark-accent-color);
+
+
+  /* Sizes */
+  --max-content-width: 1024px;
 }
 
